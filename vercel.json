@@ -1,0 +1,11 @@
+{
+    "functions": {
+      "api/**/*.js": {
+        "runtime": "node@14"
+      }
+    },
+    "routes": [
+      { "handle": "filesystem" },
+      { "src": "/api/(.*)", "dest": "api/$1" }
+    ]
+  }
